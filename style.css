@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    color: #181717;
+    margin-bottom: 16px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:70%;
+    margin-bottom: 25px;
+}
+.input input{
+    border: none;
+    outline: none;
+    margin-inline: 7px;
+}
+.input input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    width: 70%;
+    text-align: left;
+    border-radius: 7px;
+    color: gray;
+    cursor:text;
+}
+.input input[type="button"]{
+    background-color: rgb(22, 200, 93);
+    width: 80px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.input input[type="button"]:hover{
+    background-color: green;
+    transition: 1.2s;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+ul li{
+    list-style:circle;
+    margin-block: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    border: 0.1px solid #dbcfcf;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ul li:hover{
+    background-color: #dddd6e;
+}
+.remove-btn{
+    background-color: rgb(226, 92, 68);
+    width: 60px;
+    color: white;
+    padding: 8px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.remove-btn:hover{
+    background-color: red;
+    transition: 1.2s;
+}
+.edit-btn{
+    background-color: rgb(110, 95, 206);
+    width: 60px;
+    color: white;
+    padding: 8px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color: blue;
+    transition: 1.2s;
+}
