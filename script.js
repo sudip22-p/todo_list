@@ -5,7 +5,7 @@ let taskToEdit=null;
 
 
 //placing the stored file as they are on loading
-document.addEventListener("DOMContentLoaded",getTasksToLocalStorage);
+// document.addEventListener("DOMContentLoaded",getTasksToLocalStorage); not for now --**
 
 
 //function to add new task
