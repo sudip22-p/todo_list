@@ -33,7 +33,7 @@ function addTask(){
             if(taskToEdit){
 
                 //updating in storage too above all coz:need taskToEdit previous /old text
-                editTasksToLocalStorage(taskToEdit.innerHTML,taskInput.value);
+                // editTasksToLocalStorage(taskToEdit.innerHTML,taskInput.value); not for now --**
                 taskToEdit.innerHTML=taskInput.value;
                 taskInput.value="";
                 addBtn.value="Add";
@@ -74,7 +74,7 @@ function addTask(){
 
         //making the input field empty
         taskInput.value="";
-        saveTasksToLocalStorage(newTask);
+        // saveTasksToLocalStorage(newTask);not for now --**
         return;
 
     }
@@ -89,8 +89,8 @@ function updateTasks(e){
         let parentLi=parentSpan.parentElement;
         parentLi.remove();
         //for deleting from local memory
-        let siblingP=parentSpan.previousElementSibling;//getting task-text
-        removeTasksFromLocalStorage(siblingP.innerHTML);
+        // let siblingP=parentSpan.previousElementSibling;//getting task-text   not for now --**
+        // removeTasksFromLocalStorage(siblingP.innerHTML);not for now --**
     }else if(e.target.innerHTML=="Edit"){
         let parentSpan=e.target.parentElement;
         let siblingP=parentSpan.previousElementSibling;
