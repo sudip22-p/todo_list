@@ -90,6 +90,7 @@ function updateTasks(e){
 }
 
 
+
 //saving to local 
 function saveTasksToLocalStorage(newTask) {
     let tasks=[];//why array not directly the msg ---coz:storing muliple tasks not single..
@@ -97,6 +98,8 @@ function saveTasksToLocalStorage(newTask) {
     tasks.push(newTask);//adding the new task in new array element at last
     localStorage.setItem("tasks",JSON.stringify(tasks));//updating the tasks in local storage 
 }
+
+
 
 //getting local tasks data
 function getTasksToLocalStorage(){
@@ -134,6 +137,7 @@ function getTasksToLocalStorage(){
 
 
 
+//function to remove the deleted task from local storage too
 function removeTasksFromLocalStorage(task){
     let tasks=[];
     tasks=JSON.parse(localStorage.getItem("tasks"));//taking from storage
@@ -144,6 +148,8 @@ function removeTasksFromLocalStorage(task){
 
 
 
+
+//function to edit the edited task in local storage too
 function editTasksToLocalStorage(oldTaskText,newTaskText){
     let tasks=[];
     tasks=JSON.parse(localStorage.getItem("tasks"));//taking from storage
