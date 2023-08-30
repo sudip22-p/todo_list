@@ -17,7 +17,7 @@ body{
 h1{
     font-size: 36px;
     user-select: none;
-    color: #181717;
+    color: #cda357;
     margin-bottom: 16px;
 }
 .input{
@@ -38,7 +38,7 @@ h1{
     width: 70%;
     text-align: left;
     border-radius: 7px;
-    color: gray;
+    color: black;
     cursor:text;
 }
 .input input[type="button"]{
@@ -52,6 +52,9 @@ h1{
     cursor: pointer;
     letter-spacing: 1.05px;
     user-select: none;
+}
+.input input[type="text"]::placeholder {
+    color: #9dbf9e;
 }
 .input input[type="button"]:hover{
     background-color: green;
@@ -87,38 +90,40 @@ p{
     width: 100%;
     height: 100%;
     text-align: left;
+    color: chocolate;
 }
-.remove-btn{
-    padding: 7px 3px;
-    background-color: rgb(226, 92, 68);
-    width: 60px;
+.remove-btn {
+    padding: 10px 10px;
     color: white;
     font-size: 15px;
     border-radius: 5px;
-    font-weight: bold;
     cursor: pointer;
     letter-spacing: 1.05px;
     user-select: none;
+    background-color: #e74c3c; 
+    border: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease-in-out;
 }
-.remove-btn:hover{
-    background-color: red;
-    transition: 1.2s;
-}
-.edit-btn{
-    letter-spacing: 1.05px;
-    padding: 7px 3px;
-    background-color: rgb(110, 95, 206);
-    width: 60px;
+.edit-btn {
+    padding: 10px 10px;
     color: white;
     font-size: 15px;
     border-radius: 5px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 3px;
     cursor: pointer;
+    letter-spacing: 1.05px;
     user-select: none;
+    background-color: #3498db;
+    border: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.edit-btn:hover{
-    background-color: blue;
-    transition: 1.2s;
+.remove-btn:hover {
+    background-color: #c0392b;
 }
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
