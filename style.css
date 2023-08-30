@@ -52,13 +52,13 @@ h1{
     cursor: pointer;
     letter-spacing: 1.05px;
     user-select: none;
+    transition: background-color 0.3s ease-in-out;
 }
 .input input[type="text"]::placeholder {
     color: #9dbf9e;
 }
 .input input[type="button"]:hover{
     background-color: green;
-    transition: 1.2s;
 }
 ul{
     display: flex;
@@ -68,7 +68,6 @@ ul{
     width: 60%;
 }
 ul li{
-    list-style:circle;
     margin-block: 10px;
     border-radius: 4px;
     background-color: #fff;
@@ -125,5 +124,105 @@ p{
 }
 .edit-btn:hover {
     background-color: #2980b9;
+}
+@media (max-width:1023px) {
+    h1{
+        font-size: 34px;
+    }
+    .input{
+        min-width:80%;
+    }
+    .input input[type="text"]{
+        width: 80%;
+    }
+    ul{
+        width: 75%;
+    }
+}
+@media (max-width:767px) {
+    h1{
+        font-size: 30px;
+    }
+    .input{
+        min-width:90%;
+    }
+    .input input[type="text"]{
+        width: 90%;
+    }
+    ul{
+        width: 85%;
+    }
+}
+@media (max-width:629px) {
+    h1{
+        font-size: 25px;
+    }
+    .input{
+        width: 100%;
+    }
+    .input input[type="text"]{
+        font-size: 16px;
+        width: 97%;
+    }
+    ul{
+        width: 95%;
+    }
+    ul li{
+        font-size: 14px;
+    }
+    .remove-btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .edit-btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width:443px) {
+    h1{
+        font-size: 21px;
+    }
+    ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .edit-btn {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+}
+@media (max-width:320px) {
+    h1{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .input input{
+        margin-block: 7px;
+    }
+    .input input[type="text"]{
+        font-size: 14px;
+    }
+    .input input[type="button"]{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    ul li{
+        font-size: 11px;
+    }
+    p{
+        padding: 12px;
+    }
+    .remove-btn {
+        padding: 7px 7px;
+        font-size: 10px;
+    }
+    .edit-btn {
+        padding: 7px 7px;
+        font-size: 10px;
+    }
 }
 
