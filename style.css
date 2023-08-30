@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -14,12 +16,14 @@ body{
     min-height: 100vh;
     text-align: center;
 }
+
 h1{
     font-size: 36px;
     user-select: none;
     color: #cda357;
     margin-bottom: 16px;
 }
+
 .input{
     display: flex;
     justify-content: center;
@@ -27,11 +31,13 @@ h1{
     min-width:70%;
     margin-bottom: 25px;
 }
+
 .input input{
     border: none;
     outline: none;
     margin-inline: 7px;
 }
+
 .input input[type="text"]{
     padding: 10px;
     font-size: 20px;
@@ -41,6 +47,7 @@ h1{
     color: black;
     cursor:text;
 }
+
 .input input[type="button"]{
     background-color: rgb(22, 200, 93);
     width: 80px;
@@ -54,12 +61,15 @@ h1{
     user-select: none;
     transition: background-color 0.3s ease-in-out;
 }
+
 .input input[type="text"]::placeholder {
     color: #9dbf9e;
 }
+
 .input input[type="button"]:hover{
     background-color: green;
 }
+
 ul{
     display: flex;
     justify-content: center;
@@ -67,6 +77,7 @@ ul{
     flex-direction: column;
     width: 60%;
 }
+
 ul li{
     margin-block: 10px;
     border-radius: 4px;
@@ -81,9 +92,11 @@ ul li{
     justify-content: space-between;
     width: 100%;
 }
+
 ul li:hover{
     background-color: #dddd6e;
 }
+
 p{
     padding: 15px;
     width: 100%;
@@ -91,6 +104,7 @@ p{
     text-align: left;
     color: chocolate;
 }
+
 .remove-btn {
     padding: 10px 10px;
     color: white;
@@ -104,6 +118,7 @@ p{
     font-weight: normal;
     transition: background-color 0.3s ease-in-out;
 }
+
 .edit-btn {
     padding: 10px 10px;
     color: white;
@@ -119,12 +134,16 @@ p{
     margin-left: 5px;
     margin-right: 5px;
 }
+
 .remove-btn:hover {
     background-color: #c0392b;
 }
+
 .edit-btn:hover {
     background-color: #2980b9;
 }
+
+
 @media (max-width:1023px) {
     h1{
         font-size: 34px;
