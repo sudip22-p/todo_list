@@ -76,7 +76,7 @@ function addTask(){
         taskInput.value="";
         saveTasksToLocalStorage(newTask);
         return;
-        
+
     }
 }
 
@@ -105,6 +105,7 @@ function updateTasks(e){
 
 
 //saving to local 
+//*****not available this function for pages hosted using github statically :need some backend or other emplementations */
 function saveTasksToLocalStorage(newTask) {
     let tasks=[];//why array not directly the msg ---coz:storing muliple tasks not single..
     tasks=JSON.parse(localStorage.getItem("tasks"));//taking from storage
