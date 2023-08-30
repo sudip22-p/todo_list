@@ -7,6 +7,7 @@ let taskToEdit=null;
 //placing the stored file as they are on loading
 document.addEventListener("DOMContentLoaded",getTasksToLocalStorage);
 
+
 //function to add new task
 addBtn.addEventListener("click",addTask);
 
@@ -15,27 +16,38 @@ addBtn.addEventListener("click",addTask);
 taskContainer.addEventListener("click",updateTasks);
 
 
-
+//function to add new task
 function addTask(){
     let newTask=taskInput.value;
+
     if(newTask.trim() === ""){
         alert("Don't leave field empty!!!-->input some task first??");
         taskInput.value="";
         taskInput.focus();
         return;
+
     }else {
+
         if(addBtn.value==="Edit"){//for Editing purpose 
+
             if(taskToEdit){
+
                 //updating in storage too above all coz:need taskToEdit previous /old text
                 editTasksToLocalStorage(taskToEdit.innerHTML,taskInput.value);
                 taskToEdit.innerHTML=taskInput.value;
                 taskInput.value="";
                 addBtn.value="Add";
+
             }else{
+
                 alert("Unknown Error Occured!!!!!!");
+
             }
             return;
+
         }
+
+
         const li=document.createElement("li");//wrapper li
 
         const p=document.createElement("p");//p tag for text
@@ -64,6 +76,7 @@ function addTask(){
         taskInput.value="";
         saveTasksToLocalStorage(newTask);
         return;
+        
     }
 }
 
